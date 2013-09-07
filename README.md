@@ -3,6 +3,11 @@ Space Trumps 2013
 Written for Google Summer of Code 2013
 Supporting Organisation: AerospaceResearch.Net
 ------------------
+
+[![Screenshot](./GSoC2013.png)](http://www.youtube.com/watch?v=wo1q-b0RHJg&feature=share&list=TL7XoQqLjCN98)
+
+------------------
+
 Overview: This is a space card game to educate students and children on different elements of space launchers. Currently, this game skeleton has the card deck for space launchers, and we will be hoping to expand it to other space objects, e.g. planets, space suits and so forth.
 
 Objective: To get rid of all the cards on hand.
