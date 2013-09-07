@@ -4,7 +4,7 @@ Written for Google Summer of Code 2013
 Supporting Organisation: AerospaceResearch.Net
 ------------------
 
-[![Screenshot](./GSoC2013.png)](http://www.youtube.com/watch?v=wo1q-b0RHJg&feature=share&list=TL7XoQqLjCN98)
+[![Screenshot](https://github.com/quarbby/Space/blob/master/GSoC2013.PNG)](http://www.youtube.com/watch?v=wo1q-b0RHJg&feature=share&list=TL7XoQqLjCN98)
 
 ------------------
 
