@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="0dip"
+    android:layout_marginLeft="0dip"
+    android:layout_marginRight="0dip"
+    android:layout_marginTop="0dip"
+    android:background="@drawable/rulesboard"
+    android:orientation="horizontal"
+    android:visibility="visible" >
+
+    <Button
+        android:id="@+id/okButton"
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/okicon"
+        android:clickable="true"/>
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/okButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="20dp"
+        >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="23dp"
+        android:layout_marginRight="23dp"
+        android:orientation="vertical"
+        android:paddingBottom="20dip"
+        android:paddingTop="20dip" >
+
+        <TextView
+            android:id="@+id/Rules"
+            android:layout_width="249dp"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dp"
+            android:paddingTop="3dp"
+            android:text="Rules"
+            android:textSize="20dip"
+            android:textStyle="bold" 
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/rulesExplained"
+            android:layout_width="match_parent"
+            android:layout_height="282dp"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="Objective: First player to get rid of all the cards on hand wins\n\n1.Each player is dealt seven cards.\n\n2.The first player plays a card and chooses a category.\n\n3.The other players have to put down cards whose value in the category is higher than the previous.\n\n4.If there is no such card, the player can play a Special Card or draw two cards from the stack."
+            android:textSize="16dip"
+             android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/special"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="5dp"
+            android:paddingTop="15dp"
+            android:text="Special Cards"
+            android:textSize="20dip"
+            android:textStyle="bold" 
+             android:textColor="@android:color/white"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip" >
+
+            <ImageView
+                android:id="@+id/wildCard"
+                android:layout_width="82dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/wildCardExplained"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="To change the category. Can be played when player runs out of eligible cards."
+                android:textSize="16dip" 
+                 android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip" >
+
+            <ImageView
+                android:id="@+id/drawTwo"
+                android:layout_width="82dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/drawTwoExplained"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="The next player draws two cards and misses a turn."
+                android:textSize="16dip" 
+                 android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip" >
+
+            <ImageView
+                android:id="@+id/reverse"
+                android:layout_width="82dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/reverseExplained"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="Reverses the direction of play"
+                android:textSize="16dip" 
+                 android:textColor="@android:color/white"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:paddingBottom="20dip"
+            android:paddingTop="20dip" >
+
+            <ImageView
+                android:id="@+id/stop"
+                android:layout_width="82dp"
+                android:layout_height="100dp"
+                android:src="@drawable/ic_launcher" />
+
+            <TextView
+                android:id="@+id/stopExplained"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:text="The next player skips a turn"
+                android:textSize="16dip" 
+                 android:textColor="@android:color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+        </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/backgroundImage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="61dp"
+        android:layout_marginLeft="60dp" >
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/cardView"
+        android:layout_width="400dp"
+        android:layout_height="200dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/ic_launcher" />
+
+    <Button
+        android:id="@+id/Cancel"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/Play"
+        android:layout_alignBottom="@+id/Play"
+        android:layout_marginLeft="19dp"
+        android:layout_toRightOf="@+id/Play"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/Play"
+        android:layout_width="94dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/cardView"
+        android:layout_marginTop="40dp"
+        android:text="Play!" />
+
+</RelativeLayout>
